@@ -17,7 +17,7 @@ def main():
     if uploaded_file is not None:
         try:
             dataframe = pd.read_csv(uploaded_file)
-            st.write(dataframe['text'])
+            st.write(dataframe['text'][0])
         except:
             pass
         
