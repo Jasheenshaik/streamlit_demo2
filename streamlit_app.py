@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd 
-# from transformers import AutoTokenizer 
+from transformers import AutoTokenizer 
 
 st.title("This is a demo website for the llm checking") 
 
