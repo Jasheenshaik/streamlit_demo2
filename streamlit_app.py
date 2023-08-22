@@ -7,12 +7,14 @@ st.title("This is a demo website for the llm checking")
 
 
 
-uploaded_file = st.file_uploader("Choose a file")
+def main():
+    uploaded_file = st.file_uploader(label = 'upload the file')
+    if uploaded_file is not None:
+        try:
+            dataframe = pd.read_csv(uploaded_file)
+            st.write(dataframe['text'])
+        except:
+            pass
 
-dataframe = pd.read_csv(uploaded_file)
-    
-st.write(dataframe['text'])
-
-# name =  st.text_input('enter your name')
-
-# st.write(f'the name you have entered is {name}')
+if __name__ == '__main__':
+    main()
