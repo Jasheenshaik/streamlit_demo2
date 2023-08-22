@@ -1,10 +1,7 @@
 import streamlit as st
 import pandas as pd 
 import torch
-# from transformers import AutoTokenizer 
-# except:
-#     import os
-#     os.system("pip3 install transformers")
+from transformers import AutoTokenizer 
 
 st.title("This is a demo website for the llm checking") 
 
