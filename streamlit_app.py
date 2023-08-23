@@ -12,7 +12,7 @@ def main():
     # BASE_URL = 'http://219.91.172.132:5556'
     BASE_URL = 'http://127.0.0.1:5000'
     input = { "query": 'Give me 2 state names of India'}
-    response = requests.post(f"{BASE_URL}/generate", json= input)
+    response = requests.post(BASE_URL, json= input)
     st.write(response.json())
 
 
